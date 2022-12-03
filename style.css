@@ -213,17 +213,65 @@
       src: url("font/Norse-Bold.otf") format("opentype");
     }
 
+    @media only screen and (max-width: 600px) {
+      html, body, content {
+        height: 95vh;
+      }
+
+      .content {
+        flex-direction: column !important;
+      }
+
+      .sidePanel {
+        max-height: 10%;
+      }
+
+      .logo {
+        height: 100% !important;
+        top: 0 !important;
+        background-color: rgba(0, 0, 0, 0.534);
+      }
+
+      .logo > span,
+      .footerSide {
+        display: none;
+      }
+
+      .headerMain {
+        display: none;
+      }
+
+      .headerMainText {
+        margin-top: -10%;
+        padding: 0 6% 0 6% !important;
+      }
+
+      .formNameMain,
+      .formEmailTel,
+      .formPassMain {
+        flex-direction: column;
+      }
+
+      #confirm {
+        margin-top: -5% !important;
+        margin-bottom: 5% !important;
+      }
+
+      .logIn {
+        margin-top: 5%;
+      }
+
+    }
+
   *,
   *::before,
   *::after {
     box-sizing: inherit;
   }
 
-  html {
+  html, body {
     box-sizing: border-box;
     font-family: Arial;
-    width: 100%;
-    max-width: 100%;
   }
 
   a {
@@ -238,6 +286,8 @@
 
   .sidePanel {
     display: flex;
+    flex: 1;
+    max-width: max-content;
     flex-direction: column;
     background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
@@ -250,13 +300,14 @@
     position: relative;
     justify-content:center;
     color: white;
-    font-size: 150px;
     height: 20%;
     top: 20%;
     background-color: rgba(0, 0, 0, 0.534);
+    margin-bottom: 75vh;
   }
 
   .logo > span {
+    font-size: 150px;
     font-family: Norse-Bold;
     align-self: center;
   }
@@ -266,30 +317,29 @@
     position: relative;
     background-color: rgba(218, 218, 218, 0.15);
     height: 2%;
-    top: 75%;
     text-align: center;
     color: white;
   }
 
   .main {
     display: flex;
-    flex-direction: column;
     flex: 1;
+    flex-direction: column;
     background-color: #f9fafb;
   }
 
   .headerMain {
-    height: 9vh;
-    min-width: 100%;
+    display: flex;
+    padding: 5% 0 5% 0; 
     background-color: #f9fafb;
   }
 
   .headerMainText {
     display: flex;
     flex-direction: column;
-    padding: 0 19vw 0 2vw;
+    padding: 0 19% 0 2%;
     font-size: large;
-    min-height: 20vh;
+    min-height: 20%;
     font-weight: bold;
     background-color: #f9fafb;
   }
@@ -298,7 +348,6 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    min-height: 35vh;
     padding: 2%;
     border: 2px solid rgba(128, 128, 128, 0.089);
   }
@@ -351,7 +400,7 @@
   }
 
   #match {
-    display: none;
+    opacity: 0;
     font-size: 0.7rem;
     color: rgb(252, 76, 76);
     line-height: 0;
@@ -364,7 +413,6 @@
     gap: 3vh;
     margin-top: 2%;
     padding: 2%;
-    min-height: 10vh;
     background-color: #f9fafb;
   }
 

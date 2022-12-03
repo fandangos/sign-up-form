@@ -4,11 +4,11 @@ let matchText = document.getElementById('match');
 
 function comparePassword() {
     if (password.value == passConfirm.value) {
-        matchText.style.display = 'none';
+        matchText.style.opacity = '0';
         password.style.border = '';
         passConfirm.style.border = '';
     } else {
-        matchText.style.display = 'block';
+        matchText.style.opacity = '1';
         password.style.border = 'red solid 1px';
         passConfirm.style.border = 'red solid 1px';
     }
