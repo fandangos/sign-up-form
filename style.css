@@ -1,0 +1,402 @@
+  /* START OF RESET by Necolas 
+  https://github.com/necolas/normalize.css/
+     ========================================================================== */
+
+  html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+
+
+  body {
+    margin: 0;
+  }
+
+
+  main {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+
+  pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  a {
+    background-color: transparent;
+  }
+
+
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+  }
+
+
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+
+
+  small {
+    font-size: 80%;
+  }
+
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+
+  img {
+    border-style: none;
+  }
+
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  button,
+  input {
+    overflow: visible;
+  }
+
+  button,
+  select {
+    text-transform: none;
+  }
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+
+
+  legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+  }
+
+  progress {
+    vertical-align: baseline;
+  }
+
+
+  textarea {
+    overflow: auto;
+  }
+
+
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+
+  [type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+  }
+
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+  }
+
+
+  details {
+    display: block;
+  }
+
+  summary {
+    display: list-item;
+  }
+
+
+
+
+  template {
+    display: none;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+  /* END OF RESET by Necolas 
+  https://github.com/necolas/normalize.css/
+     ========================================================================== */
+
+
+    @font-face {
+      font-family: Norse-Bold;
+      src: url("font/Norse-Bold.otf") format("opentype");
+    }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-family: Arial;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .content {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .sidePanel {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    background-position: 60%;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    display: flex;
+    position: relative;
+    justify-content:center;
+    color: white;
+    font-size: 150px;
+    height: 20%;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.534);
+  }
+
+  .logo > span {
+    font-family: Norse-Bold;
+    align-self: center;
+  }
+
+
+  .footerSide {
+    position: relative;
+    background-color: rgba(218, 218, 218, 0.15);
+    height: 2%;
+    top: 75%;
+    text-align: center;
+    color: white;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #f9fafb;
+  }
+
+  .headerMain {
+    height: 9vh;
+    min-width: 100%;
+    background-color: #f9fafb;
+  }
+
+  .headerMainText {
+    display: flex;
+    flex-direction: column;
+    padding: 0 19vw 0 2vw;
+    font-size: large;
+    min-height: 20vh;
+    font-weight: bold;
+    background-color: #f9fafb;
+  }
+
+  .formMain {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 35vh;
+    padding: 2%;
+    border: 2px solid rgba(128, 128, 128, 0.089);
+  }
+
+  .formHeaderMain {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+
+  .formNameMain {
+    display: flex;
+    gap: 4vw;
+  }
+
+  label {
+    font-size: small;
+  }
+
+  input {
+    margin-top: 0.5vh;
+    border-radius: 5px;
+    font-family: inherit;
+    border: #E5E7EB solid 1px;
+  }
+
+  input:focus {
+    border: rgba(0, 0, 255, 0.712) solid 1px;
+    box-shadow: 3px 3px 3px rgba(0, 4, 255, 0.171);
+    outline: none;
+  }
+
+  .name,
+  .emailTel,
+  .password {
+    font-size: 1.2rem;
+  }
+
+  .formEmailTel {
+    display: flex;
+    gap: 4vw;
+    margin-top: 2vh;
+  }
+
+  .formPassMain {
+    display: flex;
+    gap: 4vw;
+    margin-top: 2vh;
+  }
+
+  #match {
+    display: none;
+    font-size: 0.7rem;
+    color: rgb(252, 76, 76);
+    line-height: 0;
+  }
+
+  .buttonAreaMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3vh;
+    margin-top: 2%;
+    padding: 2%;
+    min-height: 10vh;
+    background-color: #f9fafb;
+  }
+
+  #createAccount {
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+    width: 28%;
+    height: 150%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.281);
+  }
+
+  #createAccount:hover {
+    color: rgb(255, 255, 197);
+  }
+
+  #createAccount:active {
+    transform: scale(1.07);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.281);
+  }
+
+  .logIn {
+    font-weight: bold;
+    padding-left: 0.5vw;
+  }
+
+  .logIn > a:link,
+  .logIn > a:visited,
+  .logIn > a:hover,
+  .logIn > a:active {
+    text-decoration: none;
+    color: #596D48;
+  }
